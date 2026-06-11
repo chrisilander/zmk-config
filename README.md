@@ -182,7 +182,7 @@ using vertical combos for numerals (and tab since I want a dedicated esc key)
 and horisontal combos for my most commonly used symbols. From here, I can
 access the system layer by holding the right middle thumb key while tapping it
 will produce a space. The outermost thumb keys on each hand triggers the hyper
-key for convenience. The rest of the thumb keys are smart shift, backspace and
+key for convenience. The rest of the thumb keys are shift, backspace and
 return.
 
 #### System layer
@@ -235,24 +235,7 @@ functionality, since it will interfere with gameplay. The system layer will
 still be accessible from here if needed. This layer also has a custom combo
 setup for the numerals for easy access with the left hand only.
 
-### Smart shift
-
-Also here, I have adopted some behaviour from
-[urob](https://github.com/urob/zmk-config?tab=readme-ov-file#capsword). The
-outer most thumb keys on each half has three different functions:
-
-- `tap`:
-
-  - Sticky shift, will trigger shift behaviour for the next keypress only.
-
-- `hold`:
-
-  - Regular shift behaviour, will stay active until key is released.
-
-- `double tap`:
-
-  - Invoke ZMKs [caps_word](https://zmk.dev/docs/keymaps/behaviors/caps-word)
-    behaviour.
+### No shift on home row?
 
 The reason for having a dedicated key for shift on each half instead of just
 having it included in the home row mods is that although it's convenient to use
