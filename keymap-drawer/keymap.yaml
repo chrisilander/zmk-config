@@ -1,0 +1,339 @@
+layout: {zmk_keyboard: corne}
+layers:
+  base:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '-', s: _}
+  - {t: \, s: '|'}
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - F
+  - G
+  - H
+  - J
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ;, h: '$$mdi:apple-keyboard-command$$', s: ':'}
+  - {t: '''', s: '"'}
+  - {t: '`', s: '~'}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:numeric$$'}
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: system}
+  - $$mdi:apple-keyboard-shift$$
+  system:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-f1$$
+  - $$mdi:keyboard-f2$$
+  - $$mdi:keyboard-f3$$
+  - $$mdi:keyboard-f4$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:arrow-expand-up$$', h: out}
+  - {t: '$$mdi:arrow-expand-left$$', h: left}
+  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-expand-right$$', h: right}
+  - $$mdi:volume-high$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-f5$$
+  - $$mdi:keyboard-f6$$
+  - $$mdi:keyboard-f7$$
+  - $$mdi:keyboard-f8$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:arrow-expand-down$$', h: in}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - $$mdi:volume-low$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-f9$$
+  - $$mdi:keyboard-f10$$
+  - $$mdi:keyboard-f11$$
+  - $$mdi:keyboard-f12$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-off$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - mouse
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:bluetooth-connect$$', s: '1'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', s: '2'}
+  numpad:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ., s: '>'}
+  - {t: '-', s: _}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '*'
+  - '4'
+  - '5'
+  - '6'
+  - ':'
+  - {t: ',', s: <}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
+  - '1'
+  - '2'
+  - '3'
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:backspace$$
+  - '0'
+  - $$mdi:keyboard-space$$
+  mouse:
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:menu-up$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-up-thin$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:menu-left$$'}
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:menu-down$$'}
+  - {t: '$$mdi:mouse-scroll-wheel$$', h: '$$mdi:menu-right$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-left-thin$$'}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-down-thin$$'}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:arrow-right-thin$$'}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:skip-backward$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:mouse$$', h: '$$mdi:skip-forward$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {type: held}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:mouse-left-click$$
+  - $$mdi:mouse-right-click$$
+  - $$mdi:mouse-scroll-wheel$$
+  gaming:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '-', s: _}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - .
+  - $$mdi:apple-keyboard-control$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '=', s: +}
+  - $$mdi:keyboard-tab$$
+  - $$mdi:keyboard-space$$
+  - $$mdi:keyboard-return$$
+  - $$mdi:backspace$$
+  - {t: '$$mdi:keyboard-space$$', h: system}
+  - {t: '$$mdi:apple-keyboard-command$$', h: '$$mdi:apple-keyboard-option$$'}
+combos:
+- p: [35, 34, 33]
+  k: $$mdi:space-invaders$$
+  l: [base, gaming]
+  a: bottom
+  o: 0.3
+- p: [39, 41]
+  k: $$mdi:bluetooth-off$$
+  l: [system]
+  a: bottom
+  o: 0.2
+- p: [1, 2]
+  k: '!'
+  l: [base]
+- p: [2, 3]
+  k: '@'
+  l: [base]
+- p: [3, 4]
+  k: '#'
+  l: [base]
+- p: [5, 4]
+  k: $
+  l: [base]
+- p: [13, 14]
+  k: '%'
+  l: [base]
+- p: [14, 15]
+  k: ^
+  l: [base]
+- p: [15, 16]
+  k: '&'
+  l: [base]
+- p: [17, 16]
+  k: '*'
+  l: [base]
+- p: [7, 8]
+  k: (
+  l: [base]
+- p: [8, 9]
+  k: )
+  l: [base]
+- p: [19, 20]
+  k: '{'
+  l: [base]
+- p: [20, 21]
+  k: '}'
+  l: [base]
+- p: [31, 32]
+  k: '['
+  l: [base]
+- p: [32, 33]
+  k: ']'
+  l: [base]
+- p: [10, 9]
+  k: å
+  l: [base]
+- p: [34, 33]
+  k: ä
+  l: [base]
+- p: [22, 21]
+  k: ö
+  l: [base]
+- p: [1, 13]
+  k: '1'
+  l: [base]
+- p: [2, 14]
+  k: '2'
+  l: [base]
+- p: [3, 15]
+  k: '3'
+  l: [base]
+- p: [16, 4]
+  k: '4'
+  l: [base]
+- p: [5, 17]
+  k: '5'
+  l: [base]
+- p: [6, 18]
+  k: '6'
+  l: [base]
+- p: [7, 19]
+  k: '7'
+  l: [base]
+- p: [8, 20]
+  k: '8'
+  l: [base]
+- p: [21, 9]
+  k: '9'
+  l: [base]
+- p: [10, 22]
+  k: '0'
+  l: [base]
+- p: [36, 1]
+  k: '1'
+  l: [gaming]
+- p: [36, 2]
+  k: '2'
+  l: [gaming]
+- p: [36, 3]
+  k: '3'
+  l: [gaming]
+- p: [36, 4]
+  k: '4'
+  l: [gaming]
+- p: [36, 5]
+  k: '5'
+  l: [gaming]
+- p: [36, 25]
+  k: '6'
+  l: [gaming]
+- p: [36, 26]
+  k: '7'
+  l: [gaming]
+- p: [36, 27]
+  k: '8'
+  l: [gaming]
+- p: [36, 28]
+  k: '9'
+  l: [gaming]
+- p: [36, 29]
+  k: '0'
+  l: [gaming]

@@ -1,0 +1,532 @@
+---
+# mdi glyphs:
+# https://github.com/Templarian/MaterialDesign-SVG
+# https://pictogrammers.com/library/mdi
+draw_config:
+  key_h: 60.0
+  combo_w: 22.0
+  combo_h: 22.0
+  key_rx: 4.0
+  key_ry: 4.0
+  inner_pad_w: 1.0
+  inner_pad_h: 1.0
+  outer_pad_w: 0.0
+  outer_pad_h: 14.0
+  line_spacing: 1.0
+  arc_radius: 6.0
+  arc_scale: 1.0
+  append_colon_to_layer_header: false
+  small_pad: 4.0
+  svg_style: |
+    /* inherit to force styles through use tags */
+    svg path {
+        fill: inherit;
+    }
+
+    /* font and background color specifications */
+    svg.keymap {
+        font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+        font-size: 14px;
+        font-kerning: normal;
+        text-rendering: optimizeLegibility;
+        fill: #24292e;
+    }
+
+    /* default key styling */
+    rect.key {
+        fill: #f6f8fa;
+        stroke: #c9cccf;
+        stroke-width: 1;
+    }
+
+    /* color accent for held keys */
+    rect.held, rect.combo.held {
+        fill: #fdd;
+    }
+
+    /* color accent for ghost (optional) keys */
+    rect.ghost, rect.combo.ghost {
+        fill: #ddd;
+    }
+
+    text {
+        text-anchor: middle;
+        dominant-baseline: middle;
+        line-height: 1;
+    }
+
+    /* styling for layer labels */
+    text.label {
+        font-weight: bold;
+        text-anchor: start;
+        paint-order: stroke;
+        fill: #aaa;
+    }
+
+    /* styling for combo tap, and key hold/shifted label text */
+    text.combo, text.hold, text.shifted {
+        font-size: 12px;
+    }
+
+    text.hold {
+        text-anchor: middle;
+        dominant-baseline: auto;
+    }
+
+    text.shifted {
+        text-anchor: middle;
+        dominant-baseline: hanging;
+    }
+
+    /* styling for hold/shifted label text in combo box */
+    text.combo.hold, text.combo.shifted {
+        font-size: 8px;
+    }
+
+    /* lighter symbol for transparent and none keys */
+    rect.trans,
+    rect.none {
+        fill: #e6ebf1;
+        opacity: 0.75;
+        stroke-dasharray: 2, 2;
+    }
+    text.trans,
+    text.none,
+    use.trans,
+    use.none {
+        fill: #7b7e81;
+        opacity: 0.5;
+    }
+
+    /* color accent for combo boxes */
+    rect.combo {
+        fill: #cdf;
+    }
+
+    /* styling for combo dendrons */
+    path.combo {
+        stroke-width: 1;
+        stroke: #7b7e81;
+        stroke-dasharray: 2, 2;
+        fill: none;
+        opacity: 0.75;
+    }
+
+    /* left-align hold and shift glyphs to the left, custom */
+    .shifted {
+        dominant-baseline: hanging;
+        fill: rgb(96, 125, 139);
+        translate: -20px 2px;
+    }
+
+    .shifted.glyph {
+        translate: -20px 0px;
+    }
+
+    /* styling for hold (text) */
+    .hold {
+        dominant-baseline: ideographic;
+        fill: rgb(96, 125, 139);
+        translate: -15x 2px;
+    }
+
+    .hold.glyph {
+        translate: -20px 2px;
+    }
+
+  shrink_wide_legends: 5
+  glyph_tap_size: 16
+  glyph_hold_size: 12
+  glyph_shifted_size: 10
+
+parse_config:
+  sticky_label: $$mdi:gesture-tap-hold$$
+  trans_legend:
+    tap: $$mdi:transfer$$
+    type: trans
+
+  raw_binding_map:
+    # Modifiers
+    "&caps_word": $$mdi:alpha-w-box$$
+
+    # Empty
+    "&none":
+      tap: $$mdi:minus-circle-outline$$
+      type: none
+
+    # Bluetooth
+    "&bt BT_SEL 0":
+      shifted: 1
+      tap: $$mdi:bluetooth-connect$$
+    "&bt BT_SEL 1":
+      shifted: 2
+      tap: $$mdi:bluetooth-connect$$
+    "&bt BT_SEL 2":
+      shifted: 3
+      tap: $$mdi:bluetooth-connect$$
+    "&bt BT_SEL 3":
+      shifted: 4
+      tap: $$mdi:bluetooth-connect$$
+    "&bt BT_SEL 4":
+      shifted: 5
+      tap: $$mdi:bluetooth-connect$$
+
+    # custom
+    # lt systems layer
+    "&lt 1 SPACE":
+      tap: $$mdi:keyboard-space$$
+      hold: "system"
+      # hold: $$mdi:arrow-down-bold-box$$
+    # /custom
+
+    # Reset
+    "&sys_reset":
+      tap: $$mdi:backup-restore$$
+    "&bootloader":
+      tap: $$mdi:progress-download$$
+
+    # mouse emulation.
+    "&mmv MOVE_LEFT":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-left-thin$$
+    "&mmv MOVE_RIGHT":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-right-thin$$
+    "&mmv MOVE_DOWN":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-down-thin$$
+    "&mmv MOVE_UP":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:arrow-up-thin$$
+    "&mkp MB1": $$mdi:mouse-left-click$$
+    "&mkp MB2": $$mdi:mouse-right-click$$
+    "&mkp MB3": $$mdi:mouse-scroll-wheel$$
+    "&mkp MB4":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:skip-backward$$
+    "&mkp MB5":
+      tap: $$mdi:mouse$$
+      hold: $$mdi:skip-forward$$
+    "&msc SCRL_LEFT":
+      tap: $$mdi:mouse-scroll-wheel$$
+      hold: $$mdi:menu-left$$
+    "&msc SCRL_RIGHT":
+      tap: $$mdi:mouse-scroll-wheel$$
+      hold: $$mdi:menu-right$$
+    "&msc SCRL_DOWN":
+      tap: $$mdi:mouse-scroll-wheel$$
+      hold: $$mdi:menu-down$$
+    "&msc SCRL_UP":
+      tap: $$mdi:mouse-scroll-wheel$$
+      hold: $$mdi:menu-up$$
+
+    # Behaviours
+    # custom
+    "&smart_shift":
+      tap: $$mdi:keyboard-caps$$
+      hold: "smart"
+
+    # hyper key. not used atm.
+    "&kp LS(LA(LC(LCMD)))":
+      tap: $$mdi:heart$$
+      hold: "hyper"
+
+    # Left Control + Up
+    "&kp LC(UP)":
+      tap: "$$mdi:arrow-expand-up$$"
+      hold: "out"
+
+    # Left Control + Down
+    "&kp LC(DOWN)":
+      tap: "$$mdi:arrow-expand-down$$"
+      hold: "in"
+
+    # Left Control + Left
+    "&kp LC(LEFT)":
+      tap: "$$mdi:arrow-expand-left$$"
+      hold: "left"
+
+    # Left Control + Right
+    "&kp LC(RIGHT)":
+      tap: "$$mdi:arrow-expand-right$$"
+      hold: "right"
+
+    # Layers
+    # momentary layer numpad.
+    "&mo 2":
+      tap: "$$mdi:numeric$$"
+      hold: "numpad"
+  # /custom
+
+  # ZMK
+  zmk_keycode_map:
+    EXCLAMATION: "!"
+    EXCL: "!"
+    AT_SIGN: "@"
+    AT: "@"
+    HASH: "#"
+    POUND: "#"
+    DOLLAR: $
+    DLLR: $
+    PERCENT: "%"
+    PRCNT: "%"
+    CARET: ^
+    AMPERSAND: "&"
+    AMPS: "&"
+    ASTERISK: "*"
+    ASTRK: "*"
+    STAR: "*"
+    LEFT_PARENTHESIS: (
+    LPAR: (
+    RIGHT_PARENTHESIS: )
+    RPAR: )
+    EQUAL:
+      t: "="
+      s: "+"
+    PLUS: +
+    MINUS:
+      t: "-"
+      s: "_"
+    UNDERSCORE: _
+    UNDER: _
+    SLASH:
+      t: "/"
+      s: "?"
+    FSLH:
+      t: "/"
+      s: "?"
+    QUESTION: "?"
+    QMARK: "?"
+    BACKSLASH:
+      t: '\'
+      s: "|"
+    BSLH:
+      t: '\'
+      s: "|"
+    PIPE: "|"
+    NON_US_BACKSLASH: \
+    PIPE2: "|"
+    NON_US_BSLH: "|"
+    SEMICOLON:
+      t: ";"
+      s: ":"
+    SEMI:
+      t: ";"
+      s: ":"
+    COLON: ":"
+    SINGLE_QUOTE:
+      t: "'"
+      s: '"'
+    SQT:
+      t: "'"
+      s: '"'
+    APOSTROPHE: <
+    APOS: .
+    DOUBLE_QUOTES: '"'
+    DQT: '"'
+    COMMA:
+      t: ","
+      s: "<"
+    LESS_THAN: <
+    LT: <
+    PERIOD:
+      t: "."
+      s: ">"
+    DOT:
+      t: "."
+      s: ">"
+    GREATER_THAN: ">"
+    GT: ">"
+    LEFT_BRACKET:
+      t: "["
+      s: "{"
+    LBKT:
+      t: "["
+      s: "{"
+    LEFT_BRACE: "{"
+    LBRC: "{"
+    RIGHT_BRACKET:
+      t: "]"
+      s: "}"
+    RBKT:
+      t: "]"
+      s: "}"
+    RIGHT_BRACE: "}"
+    RBRC: "}"
+    GRAVE:
+      t: "`"
+      s: "~"
+    TILDE: "~"
+    NON_US_HASH: "#"
+    NUHS: "#"
+    TILDE2: "~"
+    # Numbers
+    # uncomment s below for shifted variants, custom.
+    N1:
+      t: 1
+      # s: "!"
+    N2:
+      t: 2
+      # s: "@"
+    N3:
+      t: 3
+      # s: "#"
+    N4:
+      t: 4
+      # s: "$"
+    N5:
+      t: 5
+      # s: "%"
+    N6:
+      t: 6
+      # s: "^"
+    N7:
+      t: 7
+      # s: "&"
+    N8:
+      t: 8
+      # s: "*"
+    N9:
+      t: 9
+      # s: "("
+    N0:
+      t: 0
+      # s: ")"
+    # Modifiers
+    LCTRL: $$mdi:apple-keyboard-control$$
+    LALT: $$mdi:apple-keyboard-option$$
+    LSHIFT: $$mdi:apple-keyboard-shift$$
+    LSHFT: $$mdi:apple-keyboard-shift$$
+    LCMD: $$mdi:apple-keyboard-command$$
+    RCTRL: $$mdi:apple-keyboard-control$$
+    RALT: $$mdi:apple-keyboard-option$$
+    RSHIFT: $$mdi:apple-keyboard-shift$$
+    RSHFT: $$mdi:apple-keyboard-shift$$
+    RCMD: $$mdi:apple-keyboard-command$$
+    LS(LC(LALT)): "Meh"
+    # Arrows
+    UP: $$mdi:arrow-up-bold$$
+    DOWN: $$mdi:arrow-down-bold$$
+    LEFT: $$mdi:arrow-left-bold$$
+    RIGHT: $$mdi:arrow-right-bold$$
+    # Whitespace
+    ENTER: $$mdi:keyboard-return$$
+    ESC: $$mdi:keyboard-esc$$
+    TAB: $$mdi:keyboard-tab$$
+    LS(TAB): $$mdi:keyboard-tab-reverse$$
+    SPACE: $$mdi:keyboard-space$$
+    BACKSPACE: $$mdi:backspace$$
+    BSPC: $$mdi:backspace$$
+    DELETE: $$mdi:backspace-reverse-outline$$
+    DEL: $$mdi:backspace-reverse-outline$$
+    # Locks
+    CAPSLOCK: $$mdi:apple-keyboard-caps$$
+    CAPS: $$mdi:apple-keyboard-caps$$
+    # Sound
+    C_MUTE: $$mdi:volume-off$$
+    C_VOL_UP: $$mdi:volume-high$$
+    C_VOL_DN: $$mdi:volume-low$$
+    # Media
+    C_NEXT: $$mdi:skip-next$$
+    C_PREV: $$mdi:skip-previous$$
+    C_PP: $$mdi:play-pause$$
+    # Bluetooth
+    BT_CLR: $$mdi:bluetooth-off$$
+    BT_SEL: $$mdi:bluetooth-connect$$
+    # Function Keys
+    F1: $$mdi:keyboard-f1$$
+    F2: $$mdi:keyboard-f2$$
+    F3: $$mdi:keyboard-f3$$
+    F4: $$mdi:keyboard-f4$$
+    F5: $$mdi:keyboard-f5$$
+    F6: $$mdi:keyboard-f6$$
+    F7: $$mdi:keyboard-f7$$
+    F8: $$mdi:keyboard-f8$$
+    F9: $$mdi:keyboard-f9$$
+    F10: $$mdi:keyboard-f10$$
+    F11: $$mdi:keyboard-f11$$
+    F12: $$mdi:keyboard-f12$$
+    # Settings
+    C_BRI_UP: $$mdi:brightness-5$$
+    C_BRI_DN: $$mdi:brightness-7$$
+
+    # custom
+    PAGE_DOWN: $$mdi:chevron-double-down$$
+    PAGE_UP: $$mdi:chevron-double-up$$
+    HOME: $$mdi:chevron-double-left$$
+    END: $$mdi:chevron-double-right$$
+
+  zmk_combos:
+    # custom
+    combo_gaming_toggle:
+      align: bottom
+      offset: 0.3
+      key:
+        tap: $$mdi:space-invaders$$
+
+    combo_bt_clear:
+      align: bottom
+      offset: 0.2
+      key:
+        tap: $$mdi:bluetooth-off$$
+
+    combo_left_bracket:
+      key:
+        tap: "["
+
+    combo_right_bracket:
+      key:
+        tap: "]"
+
+    combo_swe_ao:
+      key:
+        tap: "å"
+
+    combo_swe_ae:
+      key:
+        tap: "ä"
+
+    combo_swe_o:
+      key:
+        tap: "ö"
+
+    combo_num_1:
+      key:
+        tap: "1"
+
+    combo_num_2:
+      key:
+        tap: "2"
+
+    combo_num_3:
+      key:
+        tap: "3"
+
+    combo_num_4:
+      key:
+        tap: "4"
+
+    combo_num_5:
+      key:
+        tap: "5"
+
+    combo_num_6:
+      key:
+        tap: "6"
+
+    combo_num_7:
+      key:
+        tap: "7"
+
+    combo_num_8:
+      key:
+        tap: "8"
+
+    combo_num_9:
+      key:
+        tap: "9"
+
+    combo_num_0:
+      key:
+        tap: "0"
+# /custom
