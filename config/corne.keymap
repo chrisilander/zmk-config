@@ -149,31 +149,31 @@
         combo_num_1 {
             bindings = <&kp N1>;
             key-positions = <1 13>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_num_2 {
             bindings = <&kp N2>;
             key-positions = <2 14>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_num_3 {
             bindings = <&kp N3>;
             key-positions = <3 15>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_num_4 {
             bindings = <&kp N4>;
             key-positions = <16 4>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_num_5 {
             bindings = <&kp N5>;
             key-positions = <5 17>;
-            layers = <0>;
+            layers = <0 4>;
         };
 
         combo_num_6 {
@@ -206,63 +206,57 @@
             layers = <0>;
         };
 
-        combo_gaming_num_1 {
-            bindings = <&kp N1>;
-            key-positions = <36 1>;
-            layers = <4>;
-        };
-
-        combo_gaming_num_2 {
-            bindings = <&kp N2>;
-            key-positions = <36 2>;
-            layers = <4>;
-        };
-
-        combo_gaming_num_3 {
-            bindings = <&kp N3>;
-            key-positions = <36 3>;
-            layers = <4>;
-        };
-
-        combo_gaming_num_4 {
-            bindings = <&kp N4>;
-            key-positions = <36 4>;
-            layers = <4>;
-        };
-
-        combo_gaming_num_5 {
-            bindings = <&kp N5>;
-            key-positions = <36 5>;
-            layers = <4>;
-        };
-
         combo_gaming_num_6 {
             bindings = <&kp N6>;
-            key-positions = <36 25>;
+            key-positions = <25 13>;
             layers = <4>;
         };
 
         combo_gaming_num_7 {
             bindings = <&kp N7>;
-            key-positions = <36 26>;
+            key-positions = <26 14>;
             layers = <4>;
         };
 
         combo_gaming_num_8 {
             bindings = <&kp N8>;
-            key-positions = <36 27>;
+            key-positions = <27 15>;
             layers = <4>;
         };
 
         combo_gaming_num_9 {
             bindings = <&kp N9>;
-            key-positions = <36 28>;
+            key-positions = <28 16>;
             layers = <4>;
         };
 
         combo_gaming_num_0 {
             bindings = <&kp N0>;
-            key-positions = <36 29>;
+            key-positions = <29 17>;
+            layers = <4>;
+        };
+
+        combo_gaming_up {
+            bindings = <&kp UP_ARROW>;
+            key-positions = <8 20>;
+            layers = <4>;
+        };
+
+        combo_gaming_down {
+            bindings = <&kp DOWN>;
+            key-positions = <20 32>;
+            layers = <4>;
+        };
+
+        combo_gaming_left {
+            bindings = <&kp LEFT>;
+            key-positions = <19 31>;
+            layers = <4>;
+        };
+
+        combo_gaming_right {
+            bindings = <&kp RIGHT>;
+            key-positions = <33 21>;
             layers = <4>;
         };
     };
@@ -373,10 +367,10 @@
         gaming {
             display-name = "gaming";
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E    &kp R      &kp T        &kp Y     &kp U        &kp I          &kp O    &kp P          &kp MINUS
-&kp LSHFT  &kp A  &kp S  &kp D    &kp F      &kp G        &kp H     &kp J        &kp K          &kp L    &kp SEMICOLON  &kp APOS
-&kp LCTRL  &kp Z  &kp X  &kp C    &kp V      &kp B        &kp N     &kp M        &kp COMMA      &kp DOT  &kp FSLH       &kp EQUAL
-                         &kp TAB  &kp SPACE  &kp ENTER    &kp BSPC  &lt 1 SPACE  &mt RALT RCMD
+&kp ESC    &kp Q  &kp W  &kp E           &kp R      &kp T        &kp Y     &kp U      &kp I            &kp O    &kp P          &kp MINUS
+&kp TAB    &kp A  &kp S  &kp D           &kp F      &kp G        &kp H     &kp J      &kp K            &kp L    &kp SEMICOLON  &kp APOS
+&kp LCTRL  &kp Z  &kp X  &kp C           &kp V      &kp B        &kp N     &kp M      &kp COMMA        &kp DOT  &kp FSLH       &kp EQUAL
+                         &kp LEFT_SHIFT  &kp SPACE  &kp ENTER    &kp BSPC  &kp SPACE  &kp RIGHT_SHIFT
             >;
         };
     };
