@@ -209,12 +209,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '=', s: +}
-  - LEFT SHIFT
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-return$$
   - $$mdi:backspace$$
   - $$mdi:keyboard-space$$
-  - RIGHT SHIFT
+  - $$mdi:apple-keyboard-shift$$
 combos:
 - p: [35, 34, 33]
   k: $$mdi:space-invaders$$
@@ -323,7 +323,7 @@ combos:
   k: '0'
   l: [gaming]
 - p: [8, 20]
-  k: UP ARROW
+  k: $$mdi:arrow-up-bold$$
   l: [gaming]
 - p: [20, 32]
   k: $$mdi:arrow-down-bold$$
