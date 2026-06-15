@@ -170,8 +170,8 @@ layers:
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:mouse-left-click$$
-  - $$mdi:mouse-right-click$$
   - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:mouse-right-click$$
   gaming:
   - $$mdi:keyboard-esc$$
   - Q

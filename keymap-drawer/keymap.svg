@@ -1117,11 +1117,11 @@ path.combo {
 </g>
 <g transform="translate(594, 228) rotate(-15.0)" class="key keypos-40">
 <rect rx="4" ry="4" x="-29" y="-29" width="58" height="58" class="key"/>
-<use href="#mdi:mouse-right-click" xlink:href="#mdi:mouse-right-click" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:mouse-right-click"/>
+<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:mouse-scroll-wheel"/>
 </g>
 <g transform="translate(660, 219)" class="key keypos-41">
 <rect rx="4" ry="4" x="-29" y="-29" width="58" height="58" class="key"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:mouse-scroll-wheel"/>
+<use href="#mdi:mouse-right-click" xlink:href="#mdi:mouse-right-click" x="-8" y="-8" height="16" width="16.0" class="key tap glyph mdi:mouse-right-click"/>
 </g>
 </g>
 </g>
