@@ -19,10 +19,27 @@
 #
 ---
 include:
+  # Stock nice!view. Kept alongside the nice-view-gem builds so every CI run also
+  # produces a rollback firmware -- flashing these reverts the display with no
+  # config changes needed.
   - board: nice_nano_v2
     shield: corne_left nice_view_adapter nice_view
+    artifact-name: corne_left_stock
   - board: nice_nano_v2
     shield: corne_right nice_view_adapter nice_view
+    artifact-name: corne_right_stock
+
+  # nice-view-gem (M165437/nice-view-gem, pinned in config/west.yml).
+  # `nice_view_gem` replaces `nice_view`; `nice_view_adapter` stays and must come
+  # first. Never list `nice_view` and `nice_view_gem` in the same shield list --
+  # both define zmk_display_status_screen(), so that is a duplicate symbol.
+  # Settings live in config/nice_view_gem.conf.
+  - board: nice_nano_v2
+    shield: corne_left nice_view_adapter nice_view_gem
+    artifact-name: corne_left_gem
+  - board: nice_nano_v2
+    shield: corne_right nice_view_adapter nice_view_gem
+    artifact-name: corne_right_gem
 
     # This builds an artifact to reset base settings, like pairing information
     # etc. Uncomment to build, then flash with this firmware before the real one

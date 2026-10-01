@@ -4,11 +4,20 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: m165437
+      url-base: https://github.com/M165437
     # Additional modules containing boards/shields/custom code can be listed here as well
     # See https://docs.zephyrproject.org/3.2.0/develop/west/manifest.html#projects
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    # nice-view-gem must be pinned explicitly: `defaults.revision` above would
+    # otherwise apply `v0.3` to it, which is neither a branch nor a tag in that
+    # repo. The v0.3.0 tag is the one that matches ZMK v0.3 (LVGL 8); the module's
+    # `main` branch is LVGL 9 / Zephyr 4.1 and will not compile here.
+    - name: nice-view-gem
+      remote: m165437
+      revision: v0.3.0
   self:
     path: config
